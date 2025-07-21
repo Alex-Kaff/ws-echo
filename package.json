@@ -1,6 +1,6 @@
 {
   "name": "ws-echo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI tool to forward WebSocket messages between ports",
   "main": "bin/ws-echo.js",
   "bin": {
@@ -12,11 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/username/ws-echo.git"
+    "url": "git+https://github.com/Alex-Kaff/ws-echo"
   },
-  "homepage": "https://github.com/username/ws-echo#readme",
+  "homepage": "https://github.com/Alex-Kaff/ws-echo#readme",
   "bugs": {
-    "url": "https://github.com/username/ws-echo/issues"
+    "url": "https://github.com/Alex-Kaff/ws-echo/issues"
   },
   "keywords": [
     "websocket",

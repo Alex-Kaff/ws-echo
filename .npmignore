@@ -1,0 +1,60 @@
+# Development files
+.git/
+.gitignore
+.vscode/
+.idea/
+*.sublime-*
+
+# Tests
+test/
+tests/
+__tests__/
+*.test.js
+*.spec.js
+
+# Documentation
+docs/
+examples/
+
+# CI/CD
+.github/
+.travis.yml
+.circleci/
+appveyor.yml
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Temporary folders
+tmp/
+temp/
+
+# Editor directories and files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Development dependencies
+node_modules/
+
+# Optional files
+.env
+.env.test
+.env.local
+.env.production 

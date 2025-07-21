@@ -1,0 +1,47 @@
+{
+  "name": "ws-echo",
+  "version": "1.0.0",
+  "description": "A CLI tool to forward WebSocket messages between ports",
+  "main": "bin/ws-echo.js",
+  "bin": {
+    "ws-echo": "bin/ws-echo.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/ws-echo.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/ws-echo.git"
+  },
+  "homepage": "https://github.com/username/ws-echo#readme",
+  "bugs": {
+    "url": "https://github.com/username/ws-echo/issues"
+  },
+  "keywords": [
+    "websocket",
+    "echo",
+    "cli",
+    "proxy",
+    "forward",
+    "ws",
+    "server",
+    "npm",
+    "tool"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.14.2",
+    "yargs": "^17.7.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ]
+} 

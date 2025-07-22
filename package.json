@@ -2,13 +2,16 @@
   "name": "ws-echo",
   "version": "1.0.1",
   "description": "A CLI tool to forward WebSocket messages between ports",
-  "main": "bin/ws-echo.js",
+  "main": "dist/ws-echo.js",
   "bin": {
-    "ws-echo": "bin/ws-echo.js"
+    "ws-echo": "dist/ws-echo.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bin/ws-echo.js"
+    "build": "rimraf dist && tsc",
+    "start": "npm run build && node dist/ws-echo.js",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -36,11 +39,19 @@
     "ws": "^8.14.2",
     "yargs": "^17.7.2"
   },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/ws": "^8.5.10",
+    "@types/yargs": "^17.0.32",
+    "@types/node": "^20.11.17",
+    "typescript": "^5.3.3",
+    "rimraf": "^5.0.5"
+  },
   "engines": {
     "node": ">=14.0.0"
   },
   "files": [
-    "bin/",
+    "dist/",
     "README.md",
     "LICENSE"
   ]
